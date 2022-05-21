@@ -14,7 +14,7 @@
   - Builds the system response and saves the system response to `gammaimage/sysresp/sysresp<pose #>.h5`
   - The system response is stored as a 2D matrix of i x j elements, where i is the number source voxels in the image space and j is the number of detector pixels.
   - The system response matrix can be produced at various projection angles (i.e. detector poses) for tomographic image reconstruction. If multiple detector poses are given in the `poses` array, a system response matrix will be saved to a separate file for each pose and named accordingly.
-  - Note: this script reads in data from `gammaimage/efficiency.h5` and `gammaimage/farfieldmap.h5`. You will need to download `farfieldmap.h5` from: https://drive.google.com/file/d/11rHENsmg_fgdNAQ7WcaBRLhSCUq6bqV2/view?usp=sharing and store this file in `gammaimage/`
+  - Note: this script reads in data from `gammaimage/efficiency.h5` and `gammaimage/farfieldmap.h5`. You will need to download `farfieldmap.h5` from: https://drive.google.com/file/d/1CcjEMqjV6u81_Q0JffcZDwmgxi3MNiyR/view?usp=sharing and store this file in `gammaimage/`
 
 - `mlem.py`
   - Performs MLEM image reconstruction using the system response data in `gammaimage/sysresp/sysresp<pose #>.h5` and the detector data in `gammaimage/sysresp/data/spiral<pose #>.h5`.
